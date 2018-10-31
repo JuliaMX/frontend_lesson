@@ -39,7 +39,6 @@ class App extends Component {
             .then(res => this.setState({ data: res.data }));
     };
 
-
     postDataToDB = (name, age) => {
         fetch("/users", {
             method: 'POST',
@@ -57,7 +56,6 @@ class App extends Component {
             console.log(body);
         });
     };
-
 
   render() {
    const { data } = this.state;
